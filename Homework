@@ -35,7 +35,7 @@ public class Homework {
         //Поменять(убрать, поставить) логические операторы так, чтобы машина запускалась:
         // когда топлива не меньше 10 литров, двигатель работает, колеса все работают, нет ошибок
         //В ином случае, машина не должна запускаться
-        if (fuel <= 12 && isEngineWork && isWheelWork1 && isWheelWork2 && isWheelWork3 && isWheelWork4 && !hasErrors) {
+        if (fuel <= 10 && isEngineWork && isWheelWork1 && isWheelWork2 && isWheelWork3 && isWheelWork4 && !hasErrors) {
 
             System.out.println("Машина работает");
         } else {
