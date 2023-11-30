@@ -1,0 +1,57 @@
+public class Homework {
+    public static void main(String[] args) {
+        ex1();
+        ex2();
+        ex3();
+    }
+
+    public static void ex1() {
+        String name = "     ПЕтРОв Олег Иванович    ";
+        name = name.trim().toUpperCase();
+        System.out.println(name);
+        if (name.contains("ОВ ")) {
+            System.out.println("Уважаемый " + name);
+        } else if (name.contains("ОВА ")) {
+            System.out.println("Уважаемая " + name);
+        } else {
+            System.out.println("Неизвестное лицо " + name);
+        }
+    }
+
+    public static void ex2() {
+        //У нас есть машина. В данной машине есть есть перечень проверок, перед запуском
+        //Количество топлива
+        double fuel = 10;
+        //Проверка двигателя
+        boolean isEngineWork = true;
+        //Проверка отсутствия ошибок (false - ошибок нет)
+        boolean hasErrors = false;
+        //Датчики давления шин
+        boolean isWheelWork1 = true;
+        boolean isWheelWork2 = true;
+        boolean isWheelWork3 = true;
+        boolean isWheelWork4 = true;
+
+        //Поменять(убрать, поставить) логические операторы так, чтобы машина запускалась:
+        // когда топлива не меньше 10 литров, двигатель работает, колеса все работают, нет ошибок
+        //В ином случае, машина не должна запускаться
+        if (fuel <= 12 && isEngineWork && isWheelWork1 && isWheelWork2 && isWheelWork3 && isWheelWork4 && !hasErrors) {
+
+            System.out.println("Машина работает");
+        } else {
+            System.out.println("Машина не работает");
+        }
+    }
+
+    public static void ex3() {
+        //Работа на самостоятельное изучение методов.
+        //Заменить в строке все 'this is' на 'those are', получить индекс (число) второй буквы 'o' в строке
+        //Распечатать полученный индекс
+        String simply = "this is simply. This is my favorite song";
+        simply = simply.toLowerCase();
+        String replacefString = simply.replace("this is", "those are");
+        System.out.println(replacefString);
+
+    }
+
+}
